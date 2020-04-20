@@ -4,17 +4,58 @@
 <head>
   <title>DomP's Extravagent Weather App</title>
   <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 
 <body>
+  <div class="row">
+    <div class="col-md-4 offset-md-4">
+      <div class="weather">
+        <div class="current">
+          <div class="info">
+            <!-- <div>&nbsp;</div>
+            <div class="city"><small><small>CITY:</small></small> London</div>
+            <div class="temp">67&deg; <small>F</small></div>
+            <div class="wind"><small><small>WIND:</small></small> 22 km/h</div>
+            <div>&nbsp;</div> -->
+            <div class="container">
+              <h1>How's The Weather?</h1><br><br>
+              <input id="zip" class="time" placeholder="Enter Zip Code">
+              <input type="submit" id="getWeather" class="getTime" name="Submit">
+              <div id="showWeather"></div>
+              <div id="showTime"></div>
+          </div>
+          <div class="icon">
+            <span class="wi-day-sunny"></span>
+          </div>
+        </div>
+        <div class="future">
+          <div class="day">
+            <h3>Mon</h3>
+            <p><span class="wi-day-cloudy"></span></p>
+          </div>
+          <div class="day">
+            <h3>Tue</h3>
+            <p><span class="wi-showers"></span></p>
+          </div>
+          <div class="day">
+            <h3>Wed</h3>
+            <p><span class="wi-rain"></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
   <div class="main">
-    <div class="container">
+    <!-- <div class="container">
       <h1>How's The Weather?</h1><br><br>
       <input id="zip" class="time" placeholder="Enter Zip Code">
       <input type="submit" id="getWeather" class="getTime" name="Submit">
       <div id="showWeather"></div>
       <div id="showTime"></div>
-    </div>
+    </div> -->
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js
